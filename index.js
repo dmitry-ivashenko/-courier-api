@@ -1,6 +1,6 @@
 // import { CourierClient } from "@trycourier/courier";
 const CourierClient = require("@trycourier/courier");
-
+const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
